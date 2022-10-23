@@ -9,7 +9,7 @@ yt = YouTube(str(input("Enter video URL: \n>> ")))
 audio = yt.streams.filter(only_audio=True).first()
 
 # save to desktop video file
-destination = str(os.path.expanduser(r"~\Desktop"))+r"\Videos"
+destination = str(os.path.expanduser(r"~\Music"))+r"\Videos"
 
 # download the file
 out_file = audio.download(output_path=destination)
